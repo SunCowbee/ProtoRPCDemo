@@ -1,0 +1,20 @@
+syntax = "proto3" ;
+
+//熊猫 发送的消息
+message PandaRequest{
+    //姓名
+    string name = 1 ;
+    //身高
+    int32 shengao = 2 ;
+    //体重
+    repeated int32 tizhong = 3;
+}
+
+//熊猫的返回消息
+message PandaResponse{
+    //错误号
+    int32 error = 1 ;
+    //错误信息
+    string ermessage =2 ;
+
+}
